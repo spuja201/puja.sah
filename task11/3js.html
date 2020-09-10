@@ -1,0 +1,26 @@
+<html>
+    <title>Grades</title>
+    <body>
+        <script type="text/javascript">
+        x=prompt("Enter your marks")
+        var n = parseInt(x);
+        document.write("You entered:" + n + "<br>");
+        console.log("You entered:" + n);
+        if(n>=80 && n<=100){
+            document.write("Distinction");
+        }
+        else if(n>=60 && n<80){
+            document.write("First Division");
+        }
+        else if(n>=50 && n<60){
+            document.write("Second Division");
+        }
+        else if(n>=40 && n<50){
+            document.write("Third Division");
+        }
+        else{
+            document.write("Fail");
+        }
+        </script>
+    </body>
+</html>

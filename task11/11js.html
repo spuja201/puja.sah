@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form to add to array</title>
+</head>
+<body>
+	
+	<form>
+		<input type="text" id="UserI"> &nbsp;
+		<input type="button" value="Add" onclick="adder();">
+		<input type="button" value="Display" onclick="disp();">
+	</form>
+	<hr width="300" align="left">
+	<script type="text/javascript">
+		var arr=Array();
+		var count=0;
+		function adder(){
+			arr[count]=document.getElementById("UserI").value;
+			count++;
+			document.getElementById("UserI").value = "";
+		}
+		function disp(){
+			document.body.innerHTML = "";
+			document.write("<form><input type=\"text\" id=\"UserI\"> &nbsp;<input type=\"button\" value=\"Add\" onclick=\"adder();\"><input type=\"button\" value=\"Display\" onclick=\"disp();\"></form><hr width=\"300\" align=\"left\">");
+			for(i=0;i<arr.length;i++){
+				document.write("Item "+i+" = "+arr[i]+"<br>");
+			}
+		}
+	</script>
+</body>
+</html>
