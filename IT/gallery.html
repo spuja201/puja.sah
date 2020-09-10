@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My gallery</title>
+		 
+	<style type="text/css">
+		<style type="text/css">
+	body{
+		background-image:url(view.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	div.gal
+	border:1px solid #ccc;
+	}
+	div.gal:hover;{
+		border:1px solid #777;
+	}
+	div.gal img{
+		width:100%;
+		height:auto;
+	}
+	div.descrip{
+		padding:15px
+		text-align:center;
+	}
+	div.responsive{
+		padding: 0 6px;
+		float: left;
+		width: 25%;
+	}
+
+	@media only screen and (max-width: 700px){
+		.responsive{
+			width:50%;
+			margin:6px 0;
+
+		}
+		@media only screen and (max-width: 500px){
+		.responsive{
+			width:100%;
+			
+		}
+		ul{
+	  float: right;
+	  list-style-type: none;
+	  margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: blue;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: red;
+	color: black;
+	}
+</style>
+</head>
+<body>
+	<CENTER><h1> Responsive image gallery </h1></CENTER>
+	<div class="responsive">
+	<div class="gal"><a target="_blank" href="downdoad.jpg">
+			<img src="download.jpg" alt="my photo one" width="300" height="50"></a>
+			<div class="descrip">This is photo gallery</div>
+			</div>
+		</div>
+			<div class="responsive">
+			<div class="gal"><a target="_blank" href="florian.jpg">
+			<img src="florian.jpg"  alt="my photo one" width="300" height="200"></a>
+			<div class="descrip">This is photo gallery</div>
+			</div>
+		</div>
+			<div class="responsive">
+			<div class="gal"><a target="_blank" href="couple.jpg">
+			<img src="couple.jpg"  alt="my photo one" width="300" height="200"></a>
+			<div class="descrip">This is photo gallery</div>
+			</div>
+		</div>
+		<div class="responsive">
+			<div class="gal"><a target="_blank" href="about.jpg">
+			<img src="about.jpg"  alt="my photo one" width="300" height="50"></a>
+			<div class="descrip">This is photo gallery</div>
+			</div>
+		</div>
+		<div class="responsive">
+			<div class="gal"><a target="_blank" href="Moutain.jpg">
+			<img src="Moutain.jpg"  alt="my photo one" width="300" height="200"></a>
+			<div class="descrip">This is photo gallery</div>
+			</div>
+		</div>
+		
+		
+
+			<div class="responsive">
+			<div class="gal"><a target="_blank" href="images.jpg">
+			<img src="images.jpg"  alt="my photo one" width="300" height="100"></a>
+			<div class="descrip">This is photo gallery</div>
+			</div>
+		</div>
+		<ul>
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li><a href="service.html">SERVICES</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="link.html">LINK</a></li>
+			</ul>
+		</body>
+		</html>
